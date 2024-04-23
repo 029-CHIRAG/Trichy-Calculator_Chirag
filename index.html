@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CGPA CALCULATOR</title>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+<body>
+
+<div class="calculator-box">
+    <h1>CGPA CALCULATOR</h1>
+   <P>BASIC CGPA CALCULATOR FOR NIT-TRICHY</P>
+    <div id="course-wrapper">
+      <form class="key-0">
+          <strong><label id="course-row" for="courses">Courses</label></strong>
+        <strong><label id="course-row" for="courses">Credit Units</label></strong>
+        <strong><label id="course-row" for="courses">Grades</label></strong>
+        
+        <input
+          type="text"
+          placeholder="Course Code"
+          class="courses key-0"
+          required
+        />
+        <input
+          type="number"
+          class="credit-units key-0"
+          placeholder="Credit Units"
+          value=""
+          required
+        />
+        <select class="grade key-0" required>
+          <option class="grade" value="select">Select</option>
+          <option class="grade" value="6">S</option>
+          <option class="grade" value="5">A</option>
+          <option class="grade" value="4">B</option>
+          <option class="grade" value="3">C</option>
+          <option class="grade" value="2">D</option>
+          <option class="grade" value="1">E</option>
+          <option class="grade" value="0">F</option>
+        </select>
+      </form>
+    </div>
+    <div class="btn">
+      <button onclick="addCourse()">+ Add Course</button>
+      <button onclick="removeCourse()">- Remove Course</button>
+      <button onclick="calcCgpa()">Calculate CGPA</button>
+    </div>
+    <div class="lastp">
+      <p id="cgpa-calc">Your CGPA is:</p>
+    </div>
+  </div>
+  <script src="cal.js" charset="utf-8"></script>
+  </body>
+  </html>
